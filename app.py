@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 print("🔁 Cargando modelo Whisper...")
-model_size = "medium"  # Puedes ajustar según el plan de Railway, pero conviene algunos como basic, tiny y demás
+model_size = "tiny"  # Puedes ajustar según el plan de Railway, pero conviene algunos como basic, tiny y demás
 model = WhisperModel(model_size, device="cpu", compute_type="int8")
 print("✅ Modelo cargado.")
 
